@@ -22,7 +22,7 @@ h1{
 }
 
 
-.wrapper_user-add{
+.todo-list{
     margin: 0 auto;
     width: 550px;
     display: flex;
@@ -30,7 +30,7 @@ h1{
     align-items: center;
     flex-flow: row;
 }
-.wrapper_button{
+.todo-list__button{
     width: 200px;
     height: 50px;
     font-size: 16px;
@@ -40,14 +40,14 @@ h1{
     outline: none;
 
 }
-.wrapper_input{
+.todo-list__input{
     width: 450px;
     height: 46px;
     border: black 3px solid;
     outline: none;
 }
 
-.wrapper_user-out{
+.todo-list__item{
     margin: 0 auto;
     width: 550px;
     display: flex;
@@ -55,13 +55,13 @@ h1{
     align-items: center;
     flex-flow: row;
 }
-.wrapper_inp-out{
+.todo-list__text{
     background-color: white;
     width: 450px;
     height: 46px;
     border: black 3px solid;
     outline: none;
 }
-.wrapper_button-red{
+.todo-list__button-delete{
     background-color: darkred;
 }

@@ -12,19 +12,19 @@
     <section class="wrapper">
         <h1>TO DO LIST</h1>
 
-        <div class="wrapper_user-add">
-
-            <input type="text" class="wrapper_input" id="inp">
-
-
-            <button class="wrapper_button" id="btn-add">ADD ITEM</button>
-
+        <div class="todo-list">
+            <input type="text" class="todo-list__input" id="inp">
+            <button class="todo-list__button" id="btn-add">ADD ITEM</button>
         </div>
 
-        <div class="wrapper_user-out">
-            <div class="wrapper_inp-out"></div>
-            <button class="wrapper_button wrapper_button-red" id="btn-remove">REMOVE</button>
-        </div>
+        <ul class="todo-list">
+            <li class="todo-list__item">
+                <p class="todo-list__text"></p>
+                <button class="todo-list__button todo-list__button-delete" id="btn-remove">REMOVE</button>
+            </li>
+
+        </ul>
+
     </section>
 
     <script src="./index.js"></script>
