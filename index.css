@@ -19,6 +19,7 @@ h1{
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -48,31 +49,36 @@ h1{
     outline: none;
 }
 
-
-
-
-
-
 .todo-list__delete-item{
     margin-top: 40px;
-    /*display:none*/
 }
 
 .todo-list__item{
+    display: flex;
     margin: 0 auto;
     width: 550px;
-    display: flex;
+
     justify-content: center;
     align-items: center;
     flex-flow: row;
+   
+    margin-top: 10px;
 }
 .todo-list__text{
     background-color: white;
     width: 450px;
     height: 46px;
     border: black 3px solid;
-    outline: none;
+    padding: 0px 13px;
+   
 }
 .todo-list__button-delete{
     background-color: darkred;
+    width: 200px;
+    height: 52px;
+    font-size: 16px;
+    color: white;
+    padding: 10px 5px;
+    outline: none;
+    border: black 2px solid;
 }
