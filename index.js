@@ -19,8 +19,9 @@ function createHtmlElement() {
     todoListButtonDelete.className = 'todo-list__button-delete';
     todoListButtonDelete.textContent = 'Delete';
 
-
     todoListText.textContent = todoListInput.value;
+
+
 
     todoListButtonDelete.addEventListener('click', () => {
         console.log(todoListButtonDelete.parentNode.remove());
@@ -30,6 +31,7 @@ function createHtmlElement() {
 
 todoListButton.addEventListener('click', () => {
     createHtmlElement();
+    todoListInput.value = '';
 });
 
 
