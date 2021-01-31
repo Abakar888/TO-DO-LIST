@@ -3,45 +3,34 @@ let todoListButton = document.querySelector('.todo-list__button');
 let todoListDeleteItem = document.querySelector('.todo-list__delete-item');
 
 
-let todoListItem;
-let todoListText;
-let todoListButtonDelete;
 
 
 function createHtmlElement() {
-    todoListItem = document.createElement('li');
-    todoListText = document.createElement('p');
-    todoListButtonDelete = document.createElement('button');
-}
-function styleCssElement() {
-    todoListItem.className = 'todo-list__item';
-    todoListText.className = 'todo-list__text';
-    todoListButtonDelete.className = 'todo-list__button-delete';
-}
-function textContentElement() {
-    todoListButtonDelete.textContent = 'Delete';
-}
-function appendChildElement() {
+    let todoListItem = document.createElement('li');
+    let todoListText = document.createElement('textarea');
+    let todoListButtonDelete = document.createElement('button');
+
     todoListItem.appendChild(todoListText);
     todoListItem.appendChild(todoListButtonDelete);
     todoListDeleteItem.appendChild(todoListItem);
-}
 
-todoListButton.addEventListener('click', () => {
+    todoListItem.className = 'todo-list__item';
+    todoListText.className = 'todo-list__text';
+    todoListButtonDelete.className = 'todo-list__button-delete';
+    todoListButtonDelete.textContent = 'Delete';
 
-    createHtmlElement();
-    styleCssElement();
-    textContentElement();
-    appendChildElement();
 
     todoListText.textContent = todoListInput.value;
 
+    todoListButtonDelete.addEventListener('click', () => {
+        console.log(todoListButtonDelete.parentNode.remove());
+    });
+}
+
+
+todoListButton.addEventListener('click', () => {
+    createHtmlElement();
 });
-
-
-
-
-
 
 
 

@@ -67,9 +67,10 @@ h1{
 .todo-list__text{
     background-color: white;
     width: 450px;
-    height: 46px;
+    max-width: 450px;
+    height: 16px;
     border: black 3px solid;
-    padding: 0px 13px;
+    padding: 15px 13px;
    
 }
 .todo-list__button-delete{
