@@ -10,6 +10,9 @@ function createHtmlElement() {
     let todoListText = document.createElement('textarea');
     let todoListButtonDelete = document.createElement('button');
 
+
+
+
     todoListItem.appendChild(todoListText);
     todoListItem.appendChild(todoListButtonDelete);
     todoListDeleteItem.appendChild(todoListItem);
@@ -24,14 +27,19 @@ function createHtmlElement() {
 
 
     todoListButtonDelete.addEventListener('click', () => {
-        console.log(todoListButtonDelete.parentNode.remove());
+        todoListButtonDelete.parentNode.remove();
     });
 }
 
 
 todoListButton.addEventListener('click', () => {
-    createHtmlElement();
-    todoListInput.value = '';
+
+    if (todoListInput.value == '') {
+        alert('Добавьте событие');
+    } else {
+        createHtmlElement();
+        todoListInput.value = '';
+    }
 });
 
 
