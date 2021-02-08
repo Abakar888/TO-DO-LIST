@@ -7,7 +7,7 @@ let todoListDeleteItem = document.querySelector('.todo-list__delete-item');
 
 function createHtmlElement() {
     let todoListItem = document.createElement('li');
-    let todoListText = document.createElement('textarea');
+    let todoListText = document.createElement('p');
     let todoListButtonDelete = document.createElement('button');
 
 

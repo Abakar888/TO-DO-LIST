@@ -62,11 +62,10 @@ h1{
     display: flex;
     margin: 0 auto;
     width: 550px;
-
+    max-width: 550px;
     justify-content: center;
     align-items: center;
     flex-flow: row;
-   
     margin-top: 10px;
 }
 .todo-list__text{
