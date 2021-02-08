@@ -14,6 +14,9 @@ h1{
     color: black;
     opacity: 0.5;
 }
+
+
+
 .todo-list{
     width: 600px;
     font-size: 16px;
@@ -25,8 +28,10 @@ h1{
 }
 
 
+
+
+
 .todo-list__add-item{
-    margin: 0 auto;
     width: 550px;
     display: flex;
     justify-content: center;
@@ -36,7 +41,6 @@ h1{
 .todo-list__button{
     width: 200px;
     height: 52px;
-    
     font-size: 16px;
     background-color: black;
     color: white;
@@ -52,6 +56,10 @@ h1{
     border: black 3px solid;
     outline: none;
 }
+
+
+
+
 
 .todo-list__delete-item{
     width: 550px;
