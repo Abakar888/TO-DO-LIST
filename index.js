@@ -20,7 +20,7 @@ function createHtmlElement() {
     todoListItem.className = 'todo-list__item';
     todoListText.className = 'todo-list__text';
     todoListButtonDelete.className = 'todo-list__button-delete';
-    todoListButtonDelete.textContent = 'Delete';
+    todoListButtonDelete.textContent = 'Удалить событие';
 
     todoListText.textContent = todoListInput.value;
 
